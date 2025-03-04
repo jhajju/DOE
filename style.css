@@ -59,9 +59,39 @@ p {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 17vw; }
-    h3 { font-size: 9vw; }
-    p { font-size: 3vw; }
+    h1 {
+        font-size: 11vw; /* Adjust font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+
+    p {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 12vw; /* Further adjustment for very small screens (mobile phones) */
+    }
+
+    h3 {
+        font-size: 9vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .subtitle {
+        font-size: 6vw;
+    }
 }
 
 /*Navbar*/
@@ -100,12 +130,14 @@ p {
         border-radius: 5px;
         text-align: center; /* Center text */
         z-index: 1050;
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
     }
 
     .navbar-nav {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Make sure items stack vertically */
         align-items: center;
     }
 
@@ -122,6 +154,7 @@ p {
         border-radius: 5px;
     }
 }
+
 
 /* Default logo size */
 .logo img {
