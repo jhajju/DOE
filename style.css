@@ -278,9 +278,9 @@ p {
     animation-range: entry 0% cover 40%;    
 }
 @media (max-width: 768px) {
-    ppo .col-md-4 {
+    .ppo .col-md-4 {
         width: 100%; /* Stack the columns vertically */
-        margin-bottom: 20px; /* Add spacing between boxes */
+        margin-bottom: 40px; /* Add spacing between boxes */
     }
 
     .about-us-h1 {
